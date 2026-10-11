@@ -1,0 +1,10 @@
+{
+  "lab_id": "EXAMPLE-001",
+  "executed_at": "2026-10-11T00:00:00-04:00",
+  "authorized_target": "local-lab-only",
+  "operator": "example",
+  "artifacts": [],
+  "result": "inconclusive",
+  "secrets_removed": true,
+  "teardown_complete": true
+}

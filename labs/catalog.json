@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "labs": [
+    {
+      "id": "WEB-AUTH-001",
+      "title": "Authentication response consistency",
+      "track": "web",
+      "status": "source-notes",
+      "source": "archived appsec/burp-suite/server-side/authentication.md",
+      "evidence": null
+    },
+    {
+      "id": "WEB-INPUT-001",
+      "title": "Web input handling and telemetry",
+      "track": "web",
+      "status": "planned",
+      "source": "archived pentesting/purple-team mission inventory",
+      "evidence": null
+    },
+    {
+      "id": "API-AUTHZ-001",
+      "title": "API object authorization boundary",
+      "track": "api",
+      "status": "planned",
+      "source": "archived appsec API security inventory",
+      "evidence": null
+    },
+    {
+      "id": "API-TOKEN-001",
+      "title": "OAuth and JWT validation boundary",
+      "track": "api",
+      "status": "planned",
+      "source": "archived appsec API authentication inventory",
+      "evidence": null
+    },
+    {
+      "id": "CLOUD-IAM-001",
+      "title": "Cloud identity attack-path review",
+      "track": "cloud",
+      "status": "planned",
+      "source": "archived pentesting cloud-attack inventory",
+      "evidence": null
+    },
+    {
+      "id": "TRANSPORT-MTLS-001",
+      "title": "Isolated mutual-TLS trust validation",
+      "track": "transport",
+      "status": "source-lab",
+      "source": "archived appsec/tls-mtls/openssl-lab/openssl.md",
+      "evidence": null
+    }
+  ]
+}

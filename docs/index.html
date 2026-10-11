@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An authorized red-team lab engineering case study for web, API, cloud identity, and transport trust validation.">
+  <meta name="theme-color" content="#1c1917">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Red Team Lab Engineering — Jason Tribble</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css?v=20261011">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="https://cloudsec-jay.github.io/cloud-ops-engineering/"><span class="signal" aria-hidden="true"></span>Jason Tribble.</a>
+    <nav aria-label="Project navigation">
+      <a href="https://cloudsec-jay.github.io/cloud-ops-engineering/">CloudOps</a>
+      <a href="https://cloudsec-jay.github.io/cloud-ops-engineering/#red-team">Red Team section</a>
+      <a href="./" aria-current="page">Lab engineering</a>
+    </nav>
+    <a class="header-link" href="https://github.com/CloudSec-Jay/red-team-lab-engineering">Source ↗</a>
+  </header>
+
+  <main id="content">
+    <div class="breadcrumb"><a href="https://cloudsec-jay.github.io/cloud-ops-engineering/#red-team">Cloud Operations</a><span>/</span><span>Special practice</span><span>/</span>Red Team Lab Engineering</div>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="overline">Authorized adversary validation / Lab only</p>
+        <h1 id="hero-title">Break the<br><em>assumption.</em></h1>
+        <p class="lede">A controlled lab program for testing web, API, cloud identity, and transport boundaries—then turning observable behavior into evidence, remediation, and a SecOps handoff.</p>
+        <div class="hero-actions"><a class="button primary" href="https://github.com/CloudSec-Jay/red-team-lab-engineering">Inspect the repository ↗</a><a class="button" href="#program">Review the program ↓</a></div>
+      </div>
+      <div class="scope-panel" aria-label="Current project boundary">
+        <p class="panel-label">ENGAGEMENT BOUNDARY</p>
+        <dl>
+          <div><dt>Targets</dt><dd>Owned lab systems</dd></div>
+          <div><dt>Surfaces</dt><dd>Web · API · AWS · mTLS</dd></div>
+          <div><dt>Evidence</dt><dd>Sanitized by contract</dd></div>
+          <div><dt>Detection</dt><dd>Handed to SecOps</dd></div>
+          <div><dt>Live runs</dt><dd><span class="status-dot"></span>Not claimed</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <p class="overline">The operating rule</p>
+      <h2 id="manifesto-title">No proof without a boundary.<br><em>No finding without evidence.</em></h2>
+      <p>The source archive contained useful AppSec and pentesting structure, but also empty technique folders and planning examples. This project keeps the real material, labels the scaffolds, and makes execution evidence the gate between intention and claim.</p>
+    </section>
+
+    <section class="program" id="program" aria-labelledby="program-title">
+      <div class="section-heading"><p>01</p><div><span class="overline">Lab program</span><h2 id="program-title">Four attack surfaces.<br>One evidence loop.</h2></div></div>
+      <div class="track-grid">
+        <article><span class="track-id">WEB / 01</span><h3>Application behavior</h3><p>Authentication consistency, input handling, access control, and server-side trust boundaries.</p><strong>Source notes + scaffolds</strong></article>
+        <article><span class="track-id">API / 02</span><h3>Identity in every request</h3><p>Object authorization, token validation, property controls, GraphQL exposure, and bounded rate behavior.</p><strong>Scaffolded honestly</strong></article>
+        <article><span class="track-id">CLOUD / 03</span><h3>Permission paths</h3><p>Disposable identities, synthetic data, expected CloudTrail events, and explicit cleanup.</p><strong>Scaffolded honestly</strong></article>
+        <article><span class="track-id">TRUST / 04</span><h3>Transport identity</h3><p>An isolated CA, server, and client model for comparing TLS with mutual authentication.</p><strong>Source lab · evidence pending</strong></article>
+      </div>
+    </section>
+
+    <section class="operation" aria-labelledby="operation-title">
+      <div class="section-heading"><p>02</p><div><span class="overline">Execution system</span><h2 id="operation-title">The lab does not begin<br>with a payload.</h2></div></div>
+      <ol class="operation-path">
+        <li><span>01</span><div><h3>Authorize</h3><p>Record ownership, scope, time window, exclusions, stop conditions, and recovery.</p></div></li>
+        <li><span>02</span><div><h3>Hypothesize</h3><p>Name the control under test and the telemetry expected when it succeeds or fails.</p></div></li>
+        <li><span>03</span><div><h3>Exercise</h3><p>Use the minimum bounded action required inside an isolated target.</p></div></li>
+        <li><span>04</span><div><h3>Preserve</h3><p>Sanitize requests, responses, logs, timestamps, and teardown confirmation.</p></div></li>
+        <li><span>05</span><div><h3>Hand off</h3><p>Send observable behavior and detection gaps to the SecOps project without duplicating rule ownership.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="source-ledger" aria-labelledby="ledger-title">
+      <div class="section-heading"><p>03</p><div><span class="overline">Source ledger</span><h2 id="ledger-title">What exists.<br>What does not.</h2></div></div>
+      <div class="ledger-grid">
+        <div class="ledger good"><span>SUBSTANTIVE SOURCE</span><h3>Authentication testing</h3><p>Archived notes cover response-based enumeration and consistency across status, error text, and timing.</p></div>
+        <div class="ledger good"><span>SUBSTANTIVE SOURCE</span><h3>Isolated mTLS lab</h3><p>A three-role OpenSSL topology and certificate workflow exist; current run evidence does not.</p></div>
+        <div class="ledger pending"><span>PLANNED COVERAGE</span><h3>API security</h3><p>REST, GraphQL, OAuth, JWT, and authorization themes existed, but their implementation files were empty.</p></div>
+        <div class="ledger pending"><span>PLANNED COVERAGE</span><h3>Cloud attack paths</h3><p>Credential, IAM, movement, and exfiltration categories existed as placeholders, not completed labs.</p></div>
+      </div>
+    </section>
+
+    <section class="handoff" aria-labelledby="handoff-title">
+      <div><p class="overline">Red → Blue</p><h2 id="handoff-title">Adversary behavior becomes an observable contract.</h2></div>
+      <div class="handoff-flow" aria-label="Red team to SecOps handoff flow">
+        <span>LAB HYPOTHESIS</span><b>→</b><span>SANITIZED EVIDENCE</span><b>→</b><span>SECOPS GAP</span><b>→</b><span>RETEST</span>
+      </div>
+      <p>Detection implementations remain in Kubernetes SecOps. Red Team owns the reproduction boundary, evidence, evasion considerations, and retest result.</p>
+    </section>
+
+    <footer class="project-footer">
+      <div><p class="overline">Repository status</p><h2>Scaffolded with provenance.<br>Waiting for controlled runs.</h2></div>
+      <div class="footer-actions"><a class="button primary" href="https://github.com/CloudSec-Jay/red-team-lab-engineering">View source ↗</a><a href="https://github.com/CloudSec-Jay/red-team-lab-engineering/blob/main/methodology/engagement-standard.md">Read the standard ↗</a></div>
+    </footer>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="https://cloudsec-jay.github.io/cloud-ops-engineering/"><span class="signal" aria-hidden="true"></span>Jason Tribble.</a>
+    <p>Cloud operations. Tested under control.</p>
+    <a href="#content">Back to top ↑</a>
+  </footer>
+</body>
+</html>
