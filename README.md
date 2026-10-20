@@ -1,5 +1,7 @@
 # Red Team Lab Engineering
 
+> **Special practice of the [Cloud Operations Engineering](https://github.com/CloudSec-Jay/cloud-ops-engineering) system.** Each project lives in its own repository and links back to the hub. [Portfolio site](https://cloudsec-jay.github.io/cloud-ops-engineering/) · [Project site](https://cloudsec-jay.github.io/red-team-lab-engineering/)
+
 An authorized adversary-validation workspace for web applications, APIs, cloud identity, and transport security.
 
 This repository consolidates useful material from the archived `cloud-security-engineer/appsec/` and `cloud-security-engineer/pentesting/` trees into a lab-first operating model. It does not claim production testing, completed exploitation, or validated detections without evidence.
